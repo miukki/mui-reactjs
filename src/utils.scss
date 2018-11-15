@@ -1,0 +1,56 @@
+
+// Color palette
+$very-light-pink: #d8d8d8;
+$white-two: #dddddd;
+$very-light-pink-two: #d1d1d1;
+$black-10: rgba(0, 0, 0, 0.1);
+
+$black: #000000;
+$greyish-brown: #4a4a4a;
+$white: #fff;
+$squash: #f5a623;
+$tan: #e1b263;
+$white-three: #fafafa;
+
+$browser-context: 16;
+
+.font-family {
+  font-family: 'Open Sans', sans-serif !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return ($pixels / $context) * 1em;
+}
+  
+@function rem($pixels, $context: $browser-context) {
+  @return ($pixels / $context) * 1em;
+}
+
+//buttons font
+[class^="MuiButton-root-"], [class*=" MuiButton-root-"] {
+  @extend .font-family;
+  border-radius: 0 !important;
+}
+//videoSize, picSize
+.videoSize, .picSize {
+  height: 600px;
+  width: 100%;
+}
+
+//icon
+.icon-asset {
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+} 

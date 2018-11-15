@@ -1,0 +1,7 @@
+@import '../../utils';
+
+[class^="MuiTypography-root-"], [class*=" MuiTypography-root-"] {
+    @extend .font-family;
+}
+ 
+
